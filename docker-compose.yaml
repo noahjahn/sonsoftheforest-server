@@ -4,8 +4,8 @@ services:
     image: jammsen/sons-of-the-forest-dedicated-server:latest
     restart: always
     volumes:
+      - ./userdata:/sonsoftheforest/userdata
       - sonsoftheforest:/sonsoftheforest
-      - ./:/sonsoftheforest/userdata
       - steamcmd:/steamcmd
       - winedata:/winedata
     ports:

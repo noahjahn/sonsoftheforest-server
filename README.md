@@ -1,5 +1,27 @@
 # sonsoftheforest-server
 
+## Setup
+
+1. Clone the repo
+
+```
+git clone git@github.com:noahjahn/sonsoftheforest-server.git
+```
+
+2. Create the userdata directory (this is so it isn't created as the root user)
+
+```
+mkdir -p userdata
+```
+
+3. Start the container
+
+```
+docker compose up -d
+```
+
+View logs with `docker compose logs -f`
+
 ## Backups
 
 - This assumes you're on linux, using crontab
